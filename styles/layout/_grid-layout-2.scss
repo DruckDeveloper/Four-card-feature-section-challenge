@@ -1,0 +1,31 @@
+.grid-layout-2 {
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      ".       card-2 ."
+      "card-1    .  card-4"
+      ".      card-3  .";
+
+    & .card-1 {
+      grid-area: card-1;
+    }
+
+    & .card-2 {
+      grid-area: card-2;
+      transform: translateY(50%);
+    }
+
+    & .card-3 {
+      grid-area: card-3;
+      transform: translateY(-50%);
+    }
+
+    & .card-4 {
+      grid-area: card-4;
+    }
+  }
+}

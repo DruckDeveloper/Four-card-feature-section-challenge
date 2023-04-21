@@ -1,3 +1,30 @@
-.bold {
-  font-weight: bold;
+@use '../general/variables' as *;
+
+.text-bold {
+  font-weight: 600;
+}
+
+.text-thin {
+  font-weight: 200;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// Border top 
+.border-cyan {
+  border-top: 0.3125rem solid $cyan;
+}
+
+.border-light-red {
+  border-top: 0.3125rem solid $red;
+}
+
+.border-light-orange {
+  border-top: 0.3125rem solid $orange;
+}
+
+.border-light-blue {
+  border-top: 0.3125rem solid $blue;
 }

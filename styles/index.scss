@@ -1,2 +1,15 @@
+//? General 
 @use './general/reset';
+@use './general/variables' as *;
+
+//? Layouts
 @use './layout/grid-layout-1';
+@use './layout/grid-layout-2';
+
+//? Utils
+@use './utils/classes';
+
+//? Components 
+@use './components/heading';
+@use './components/cards';
+@use './components/card';
