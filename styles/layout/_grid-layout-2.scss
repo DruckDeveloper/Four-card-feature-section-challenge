@@ -1,14 +1,21 @@
 .grid-layout-2 {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
   place-items: center;
 
   @media (min-width: 768px) {
+    margin: 0 auto;
+    max-width: 70rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
       ".       card-2 ."
       "card-1    .  card-4"
       ".      card-3  .";
+
+    & .card {
+      width: 100%;
+      align-self: center;
+    }
 
     & .card-1 {
       grid-area: card-1;
